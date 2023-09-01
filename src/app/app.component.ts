@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <app-title *ngIf="destruir"></app-title>
-  <br>
-  <button (click)="destruirComponent()">Destruir Componente</button>
+  <app-data-biding></app-data-biding>
   <router-outlet></router-outlet>
   `
 })
@@ -18,7 +16,4 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
   }
 
-  public destruirComponent(){
-    this.destruir = false;
-  }
 }
