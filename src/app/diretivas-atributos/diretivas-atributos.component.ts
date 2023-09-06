@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-diretivas-atributos',
+  selector   : 'app-diretivas-atributos',
   templateUrl: './diretivas-atributos.component.html',
-  styleUrls: ['./diretivas-atributos.component.scss']
+  styleUrls  : ['./diretivas-atributos.component.scss']
 })
 export class DiretivasAtributosComponent implements OnInit {
 
-  public valor: boolean = true;
-  public height: string = '20px';
-  public backgroundColor: string = 'red';
-  public nome: string = '';
+  public valor: boolean              = true;
+  public height: string              = '20px';
+  public backgroundColor: string     = 'red';
+  public nome: string                = '';
   public list: Array<{name: string}> = [{name: 'teste'}];
 
-  public date: Date = new Date();
+  public date: Date     = new Date();
   public dateTime: Date = new Date();
   constructor() { }
 
@@ -26,10 +26,10 @@ export class DiretivasAtributosComponent implements OnInit {
       }
 
       if (this.height == '20px') {
-        this.height = '50px';
+        this.height          = '50px';
         this.backgroundColor = 'blue';
       }else{
-        this.height = '20px';
+        this.height          = '20px';
         this.backgroundColor = 'red';
       }
     }, 2000);

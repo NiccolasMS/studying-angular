@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-diretivais-estruturais',
+  selector   : 'app-diretivais-estruturais',
   templateUrl: './diretivais-estruturais.component.html',
-  styleUrls: ['./diretivais-estruturais.component.scss']
+  styleUrls  : ['./diretivais-estruturais.component.scss']
 })
 export class DiretivaisEstruturaisComponent implements OnInit {
 
-  public condition: boolean = true;
+  public condition: boolean      = true;
   public conditionClick: boolean = true;
 
   public list: Array<{nome: string, idade?: number}> = [{nome: 'Nicolas Moreira', idade: 20}, {nome: "Julia"}, {nome: "João"}, {nome: "Maria"}]
-  public nome: string = "joao"
+  public nome: string                                = "joao"
     constructor() { }
   
     ngOnInit(): void {
