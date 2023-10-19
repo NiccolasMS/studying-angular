@@ -8,6 +8,7 @@ import { DataBidingComponent } from './data-biding/data-biding.component';
 import { DiretivaisEstruturaisComponent } from './diretivais-estruturais/diretivais-estruturais.component';
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 import { SharedModule } from './shared/shared.module';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SharedModule } from './shared/shared.module';
     TitleComponent,
     DataBidingComponent,
     DiretivaisEstruturaisComponent,
-    DiretivasAtributosComponent
+    DiretivasAtributosComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
